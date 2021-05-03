@@ -36,7 +36,6 @@ artifacts:
 build_script:
   - cd %clone_folder%
   - dir
-  - ml64
   - cl
 
 
