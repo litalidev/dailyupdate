@@ -1,4 +1,6 @@
 language: c
 dist: bionic
 compiler: gcc
-script: make
+script: 
+    - make
+    - make test
