@@ -14,7 +14,7 @@ branches:
   only:
     - main
 
-  version: '{build}'
+version: '{build}'
 
 platform:
   - x86
