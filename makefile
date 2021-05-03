@@ -13,3 +13,6 @@ wexe : $(WEXE)
 $(EXE) : $(OBJ)
 
 $(WEXE) : $(WOBJ)
+
+test : all
+	./main.exe
