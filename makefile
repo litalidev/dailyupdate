@@ -15,4 +15,7 @@ $(EXE) : $(OBJ)
 $(WEXE) : $(WOBJ)
 
 test : all
-	./main.exe
+	./$(EXE)
+
+wtest : wexe
+	$(WEXE)
