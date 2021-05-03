@@ -1,0 +1,57 @@
+# Build worker image (VM template)
+image:
+  - Visual Studio 2017
+
+# scripts that are called at very beginning, before repo cloning
+init:
+  - date /T & time /T
+  - git config --global core.autocrlf input
+
+# clone directory
+clone_folder: c:\projects\main
+
+branches:
+  only:
+    - main
+
+  version: '{build}'
+
+platform:
+  - x86
+
+#configuration:
+#  - Release
+#  - Debug
+
+#environment:
+  #matrix:
+  #  - generator: "Visual Studio 15"    
+
+matrix:
+  fast_finish: true
+
+artifacts:
+  - path: '**\*.exe'
+
+build_script:
+  - cd %clone_folder%
+  - dir
+  - ml64
+  - cl
+
+
+    #- call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars32.bat"
+    #- msbuild helloworld.sln /p:Configuration=Debug
+    #- msbuild helloworld.sln /p:Configuration=Release
+    #
+  - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
+  - nmake wexe
+
+  - dir/s *.exe
+  #
+  # vs2017 32bit
+  # call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars32.bat"
+  # vs2017 64bit
+  # call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
+
+
