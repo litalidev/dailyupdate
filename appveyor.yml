@@ -62,5 +62,3 @@ deploy:
     draft: false
     prerelease: false
     APPVEYOR_REPO_TAG: true        # deploy on tag push only
-    on:
-        branch: main                   # release from master branch only
