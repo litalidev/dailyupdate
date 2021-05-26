@@ -62,7 +62,7 @@ deploy:
     artifacts: '*.exe'          # upload all NuGet packages to release assets
     draft: false
     prerelease: false
-    #skip_tags: true
+    skip_tags: true
     on:
         APPVEYOR_REPO_TAG: true        # deploy on tag push only
         #branch: main
