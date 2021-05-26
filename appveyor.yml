@@ -62,3 +62,4 @@ deploy:
     draft: false
     prerelease: false
     APPVEYOR_REPO_TAG: true        # deploy on tag push only
+    skip_tags: true
