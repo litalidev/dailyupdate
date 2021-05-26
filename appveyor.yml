@@ -64,8 +64,8 @@ deploy:
     prerelease: false
     #skip_tags: true
     on:
-        #APPVEYOR_REPO_TAG: true        # deploy on tag push only
-        branch: main
+        APPVEYOR_REPO_TAG: true        # deploy on tag push only
+        #branch: main
 
         #on:
         #branch: master
