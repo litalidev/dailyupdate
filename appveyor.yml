@@ -23,7 +23,7 @@ platform:
 #  - Release
 #  - Debug
 
-#skip_tags: true
+#xxxskip_tags: true
 
 #environment:
   #matrix:
