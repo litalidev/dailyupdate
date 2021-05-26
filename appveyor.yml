@@ -39,9 +39,6 @@ artifacts:
   - path: '**\*.exe'
 
 build_script:
-  on:
-    APPVEYOR_REPO_TAG: true        # deploy on tag push only
-    tag_prefix: v1.
 
   - cd %clone_folder%
   - dir
