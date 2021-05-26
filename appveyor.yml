@@ -67,7 +67,7 @@ deploy:
 
     on:
         APPVEYOR_REPO_TAG: true        # deploy on tag push only
-        tag: v1.*
+        APPVEYOR_REPO_TAG_NAME: v1.*
         #branch: main
 
         #on:
