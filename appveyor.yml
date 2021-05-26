@@ -6,7 +6,7 @@ image:
 init:
   - date /T & time /T
   - git config --global core.autocrlf input
-  - set tag_prefix=%APPVEYOR_REPO_TAG_NAME:0,3%
+  - set tag_prefix=%APPVEYOR_REPO_TAG_NAME:~0,3%
 
 # clone directory
 clone_folder: c:\projects\main
