@@ -23,6 +23,8 @@ platform:
 #  - Release
 #  - Debug
 
+skip_tags: true
+
 #environment:
   #matrix:
   #  - generator: "Visual Studio 15"    
@@ -59,10 +61,9 @@ deploy:
     provider: GitHub
     auth_token:
         secure: e9lKkj7uh58VQHYjAvs1eBIDgOqDmde7434f2ABj3WNULRWO4j4vvmmxZcgoSxoI
-    artifacts: '*.exe'          # upload all NuGet packages to release assets
+    artifact: '*.exe'          # upload all NuGet packages to release assets
     draft: false
     prerelease: false
-    skip_tags: true
     on:
         APPVEYOR_REPO_TAG: true        # deploy on tag push only
         #branch: main
