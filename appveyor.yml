@@ -17,6 +17,8 @@ branches:
 
 version: '{build}'
 
+skip_non_tags: true
+
 platform:
   - x86
 
