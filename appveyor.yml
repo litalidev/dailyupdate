@@ -61,6 +61,7 @@ build_script:
 
 deploy:
     release: build-$(APPVEYOR_REPO_TAG_NAME)
+    tag: $(APPVEYOR_REPO_TAG_NAME)
     description: 'Release description'
     provider: GitHub
     auth_token:
