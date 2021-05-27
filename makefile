@@ -17,5 +17,9 @@ $(WEXE) : $(WOBJ)
 test : all
 	./$(EXE)
 
+check : test
+
+distcheck : test
+
 wtest : wexe
 	$(WEXE)
