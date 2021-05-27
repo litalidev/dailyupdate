@@ -36,7 +36,7 @@ matrix:
   fast_finish: true
 
 artifacts:
-  - path: '**\*.exe'
+  - path: '**\*.zip'
 
 build_script:
 
