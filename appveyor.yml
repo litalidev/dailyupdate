@@ -54,8 +54,10 @@ build_script:
 
   - dir/s *.exe
 
-  - 7z a dailyupdate-appveyor-$(APPVEYOR_REPO_TAG_NAME).zip *.exe
-  - 7z l dailyupdate-appveyor-$(APPVEYOR_REPO_TAG_NAME).zip 
+  - 7z a dailyupdate-appveyor-%APPVEYOR_REPO_TAG_NAME%.zip *.exe
+  - 7z l dailyupdate-appveyor-%APPVEYOR_REPO_TAG_NAME%.zip
+
+  - dir/s *.zip
   #
   # vs2017 32bit
   # call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars32.bat"
@@ -69,7 +71,7 @@ deploy:
     provider: GitHub
     auth_token:
         secure: e9lKkj7uh58VQHYjAvs1eBIDgOqDmde7434f2ABj3WNULRWO4j4vvmmxZcgoSxoI
-    artifacts: '**\*.zip'          # upload all exe to release assets
+    artifact: '**\*.zip'          # upload all exe(zip) to release assets
     draft: false
     prerelease: false
 
