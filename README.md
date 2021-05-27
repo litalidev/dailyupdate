@@ -4,5 +4,5 @@
 [![Build status](https://github.com/litalidev/dailyupdate/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/litalidev/dailyupdate/actions/workflows/c-cpp.yml)
 
 
-A simple helloworld written in C with daily update (both .c and tag) and integrated with [Appveyor](https://ci.appveyor.com/project/litalidev/dailyupdate) and [Travis CI](https://travis-ci.com/litalidev/dailyupdate).
+A simple helloworld written in C with daily update (both .c and tag) and integrated with [Appveyor](https://ci.appveyor.com/project/litalidev/dailyupdate), [Travis CI](https://travis-ci.com/litalidev/dailyupdate) and [Github Action](https://github.com/litalidev/dailyupdate/actions/workflows/c-cpp.yml).
 
