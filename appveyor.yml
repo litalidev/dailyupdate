@@ -71,7 +71,7 @@ deploy:
     provider: GitHub
     auth_token:
         secure: e9lKkj7uh58VQHYjAvs1eBIDgOqDmde7434f2ABj3WNULRWO4j4vvmmxZcgoSxoI
-    artifact: '**\*.zip'          # upload all exe(zip) to release assets
+    artifacts: '**\*.zip'          # upload all exe(zip) to release assets
     draft: false
     prerelease: false
 
