@@ -53,6 +53,9 @@ build_script:
   - nmake wexe
 
   - dir/s *.exe
+
+  - 7z a dailyupdate-appveyor-$(APPVEYOR_REPO_TAG_NAME).zip *.exe
+  - 7z l dailyupdate-appveyor-$(APPVEYOR_REPO_TAG_NAME).zip 
   #
   # vs2017 32bit
   # call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars32.bat"
@@ -66,7 +69,7 @@ deploy:
     provider: GitHub
     auth_token:
         secure: e9lKkj7uh58VQHYjAvs1eBIDgOqDmde7434f2ABj3WNULRWO4j4vvmmxZcgoSxoI
-    artifacts: '**\*.exe'          # upload all exec to release assets
+    artifacts: '**\*.zip'          # upload all exe to release assets
     draft: false
     prerelease: false
 
