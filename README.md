@@ -5,8 +5,8 @@
 [![Build Status](https://dev.azure.com/litalidev/dailyupdate/_apis/build/status/litalidev.dailyupdate?branchName=main)](https://dev.azure.com/litalidev/dailyupdate/_build/latest?definitionId=1&branchName=main)
 
 A simple helloworld written in C with daily update (both .c and tag) and integrated with popular CI's:
-- [Appveyor](https://ci.appveyor.com/project/litalidev/dailyupdate)
+- [Appveyor](https://ci.appveyor.com/project/litalidev/dailyupdate) : with artifacts upload to release
 - [Travis CI](https://travis-ci.com/litalidev/dailyupdate) 
-- [Github Action](https://github.com/litalidev/dailyupdate/actions/workflows/c-cpp.yml).
-- [Azure Piplines](https://dev.azure.com/litalidev/dailyupdate/_apis/build/status/litalidev.dailyupdate?branchName=main) <<< *Failed* Azure Piplines does not support new project for free tier account.
+- [Github Action](https://github.com/litalidev/dailyupdate/actions/workflows/c-cpp.yml)
+- [Azure Piplines](https://dev.azure.com/litalidev/dailyupdate/_apis/build/status/litalidev.dailyupdate?branchName=main)
 
